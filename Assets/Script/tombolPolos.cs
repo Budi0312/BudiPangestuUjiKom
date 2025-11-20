@@ -26,13 +26,13 @@ public bool sedangPutar;
     {
         StartCoroutine(TungguSuara());
         //sfxPlay.Play();
-        SceneManager.LoadScene("ariefPemain");
+        SceneManager.LoadScene("GamePlay");
     }
 
     public void aksiCredit()
     {
         //sfxCredit.Play();
-        SceneManager.LoadScene("credit");
+        SceneManager.LoadScene("Credit");
     }
 
     public void aksiExit()
@@ -43,7 +43,7 @@ public bool sedangPutar;
     public void aksiMenu()
     {
          sfxMenu.Play();
-        SceneManager.LoadScene("menu");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public IEnumerator TungguSuara()

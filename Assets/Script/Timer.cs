@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
 //using Microsoft.Unity.VisualStudio.Editor;
 public class timer : MonoBehaviour
@@ -29,7 +30,7 @@ public class timer : MonoBehaviour
         
     }
 
-   /* IEnumerator HitungTimer()
+   IEnumerator HitungTimer()
     {
         while (isCounting && time > 0)
         {
@@ -47,11 +48,11 @@ public class timer : MonoBehaviour
             PlayerPrefs.SetInt("skor", objPemain.skor);
             PlayerPrefs.Save();
             objPemain.simpanHightSkor();
-            SceneManager.LoadScene("ariefYouWin");
+            SceneManager.LoadScene("GameOver");
         }
-    }*/
+    }
 
-    IEnumerator HitungTimer()
+   /* IEnumerator HitungTimer()
     {
         while(isCounting==true && time<time)
         {
@@ -61,5 +62,5 @@ public class timer : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
 
-    }
+    }*/
 }

@@ -11,7 +11,7 @@ public class objPemain : MonoBehaviour
     public AudioSource soundEnemy;
     public AudioSource soundNyawa;
     public bool isGrounded;
-    public float jumpForce = 12.0f; //variabel untuk tinggi lomapan
+    //public float jumpForce = 12.0f; //variabel untuk tinggi lomapan
     public float health = 10;
     public int maxHealth;
     public int skor;
@@ -37,7 +37,7 @@ public class objPemain : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("lompat");
-            jump();
+            //jump();
         }
 
         move();        
@@ -55,7 +55,7 @@ public class objPemain : MonoBehaviour
         transform.position = mousePosition;
     }
 
-    public void jump()
+    /*public void jump()
     {
         if (isGrounded)
         {
@@ -67,7 +67,7 @@ public class objPemain : MonoBehaviour
             Debug.Log("Lagi lompat");
         }
         
-    }
+    }*/
 
     void OnCollisionEnter2D(Collision2D collision)
     {

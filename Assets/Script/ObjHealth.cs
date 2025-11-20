@@ -13,4 +13,14 @@ public class ObjHealth : MonoBehaviour
     {
         
     }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.collider.CompareTag("Player"))
+        {
+            col.gameObject.GetComponent<objPemain>().tambahNyawa();
+            Debug.Log("namnbah nyawa");
+        }
+        Destroy(gameObject);
+    }
+
 }
