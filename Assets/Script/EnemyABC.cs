@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class EnemyABC : MonoBehaviour
+public class EnemyB : MonoBehaviour
 {
-          void OnCollisionEnter2D(Collision2D col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         // ❌ Tidak hancur bila menyentuh pemain
         if (col.collider.CompareTag("Player"))

@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 879869128}
   m_Layer: 0
   m_Name: Pemain
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -502,7 +502,7 @@ GameObject:
   - component: {fileID: 1137704962}
   m_Layer: 0
   m_Name: SpawnEnemy
-  m_TagString: Untagged
+  m_TagString: Lantai
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -519,6 +519,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ac9e23e2862de84c92063b867943aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnInterval: 0.5
+  PrefabsObject: {fileID: 2818970448575722016, guid: 85cf61b057e3fa7429d60992aa5c0a10, type: 3}
+  IsSpawning: 1
+  minX: -8
+  maxX: 8
+  SpawnPosition: {fileID: 628609204}
+  StartDelay: 0
 --- !u!4 &1137704963
 Transform:
   m_ObjectHideFlags: 0
@@ -528,8 +535,8 @@ Transform:
   m_GameObject: {fileID: 1137704961}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1104.5569, y: 281.799, z: -3.190744}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 6.23, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1051,7 +1058,7 @@ GameObject:
   - component: {fileID: 1824271741}
   m_Layer: 0
   m_Name: Lantai
-  m_TagString: Untagged
+  m_TagString: Lantai
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

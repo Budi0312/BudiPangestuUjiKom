@@ -21,13 +21,13 @@ public class SceneT1ombol : MonoBehaviour
     }
     public void Aksi()
     {
-        SceneManager.LoadScene("ariefPemain");
+        SceneManager.LoadScene("GamePlay");
     }
 
     public void aksiMenu()
     {
         sfxMenu.Play();
-        SceneManager.LoadScene("ariefMenu");
+        SceneManager.LoadScene("Main Menu");
     }
 
     

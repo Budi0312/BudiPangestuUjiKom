@@ -43,7 +43,7 @@ public bool sedangPutar;
     public void aksiMenu()
     {
          sfxMenu.Play();
-        SceneManager.LoadScene("ariefMenu");
+        SceneManager.LoadScene("menu");
     }
 
     public IEnumerator TungguSuara()

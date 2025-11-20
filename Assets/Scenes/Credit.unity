@@ -676,30 +676,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1312283367}
-  - component: {fileID: 1312283366}
+  - component: {fileID: 1312283368}
   m_Layer: 0
-  m_Name: aksiTombol
+  m_Name: menuTombol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1312283366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1312283365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171082d86d219c842bf6e4117516bc5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sfxMenu: {fileID: 1508682775}
-  teksSkor: {fileID: 0}
-  teksHight: {fileID: 0}
-  hightscore: 0
 --- !u!4 &1312283367
 Transform:
   m_ObjectHideFlags: 0
@@ -715,6 +699,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1312283368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312283365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e2a233572fef364593bb3ea57d5e1a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sedangPutar: 0
+  sfxPlay: {fileID: 0}
+  sfxExit: {fileID: 0}
+  sfxMenu: {fileID: 0}
 --- !u!1 &1508682774
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,9 +927,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1312283366}
-        m_TargetAssemblyTypeName: SceneT1ombol, Assembly-CSharp
-        m_MethodName: Aksi
+      - m_Target: {fileID: 1312283368}
+        m_TargetAssemblyTypeName: tombolPolos, Assembly-CSharp
+        m_MethodName: aksiMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
